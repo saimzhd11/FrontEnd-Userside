@@ -4,7 +4,7 @@
     <div class=" col-md-12">
       <div class=" card">
         <div class=" card-header">
-          <h4 class=" card-title" style="color:#A3FF01"><strong>VULNERABLE MACHINES</strong> </h4>
+          <h4 class=" card-title" style="color:#A3FF01"><strong>TRAINING APPS</strong> </h4>
         </div>
         <table class="table">
           <thead>
@@ -172,7 +172,52 @@
           </tr>
  <!--*************************************************************************************************************-->
 
- <!-------xvwa ---->
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title" style="color:#A3FF01"><strong>CUSTOM MACHINES</strong> </h4>
+        </div>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="text-center ">#</th>
+            <th>MACHINE NAME</th>
+            <th>MACHINE TYPE</th>
+            <th>LAUNCH DATE</th>
+            <th>EXPIRY DATE</th>
+            <th>Actions</th>
+          </tr>
+
+          </thead>
+          <tbody>
+          
+ 
+          <tr *ngFor="let g of variable">
+            <td class="text-center">{{g.MachineNumber}}</td>
+            <td>{{g.MachineName}} </td>
+            <td>{{g.MachineType}}</td>
+            <td>{{g.MachineLaunchDate}}</td>
+            <td>{{g.MachineExpiryDate}}</td>
+            <td>
+                <i class="tim-icons icon-laptop" (click)="open(mut_mdl)"style="cursor: pointer; color: #1d8cf8" rel="tooltip" title="View Machine Details"></i>&nbsp;&nbsp;
+                <i class="fa fa-edit" (click)="open(mutil_cntct)"  style="cursor: pointer; color: #00f2c3" rel="tooltip" title="Write Review"></i>&nbsp;&nbsp;
+            <button type="button" class="btn btn-danger btn-sm" id="btn1"  (click)="changeBtn('btn1', 'Mutil')">Off</button>
+              &nbsp;&nbsp;&nbsp;
+                                        &nbsp;
+              <label>{{this.mut}}</label>
+            </td>
+          </tr>
+ 
+          
           <tr>
             <td class="text-center">8</td>
             <td>XVWA</td>
@@ -182,7 +227,7 @@
             <td>
               <i class="tim-icons icon-laptop" (click)="open(xvwa_mdl)" style="cursor: pointer; color: #1d8cf8" rel="tooltip" title="View Machine Details"></i>&nbsp;&nbsp;
               <i class="fa fa-edit" (click)="open(xvwa_cntct)" style="cursor: pointer; color: #00f2c3" rel="tooltip" title="Write Review"></i>&nbsp;&nbsp;
-               <button type="button" class="btn btn-danger btn-sm" id="btn8" (click)="changeBtn('btn8')">Off</button>
+               <button type="button" class="btn btn-danger btn-sm" id="btn8" (click)="changeBtn('btn8', 'XVWA')">Off</button>
 
 
             </td>
@@ -197,7 +242,7 @@
             <td>
                <i class="tim-icons icon-laptop"  (click)="open(wacko_mdl)" style="cursor: pointer; color: #1d8cf8" rel="tooltip" title="View Machine Details"></i>&nbsp;&nbsp;
                <i class="fa fa-edit " (click)="open(wacko_cntct)" rel="tooltip" title="WRITE REVIEW" style="cursor: pointer; color: #00f2c3" rel="tooltip" title="Write Review"></i>&nbsp;&nbsp;
-                <button type="button" class="btn btn-danger btn-sm"  id="btn9" (click)="changeBtn('btn9')">Off</button>
+                <button type="button" class="btn btn-danger btn-sm"  id="btn9" (click)="changeBtn('btn9','WACKOPICKO')">Off</button>
 
 
             </td>
@@ -214,7 +259,7 @@
                 <i class="tim-icons icon-laptop" (click)="open(content)"  style="cursor: pointer; color: #1d8cf8" rel="tooltip" title="View Machine Details"></i>&nbsp;&nbsp;
 
               <i class="fa fa-edit" (click)="open(last_cntct)" style="cursor: pointer; color: #00f2c3" rel="tooltip" title="Write Review"></i>&nbsp;&nbsp;
-               <button type="button"class="btn btn-danger btn-sm" id="btn10" (click)="changeBtn('btn10')">Off</button>
+               <button type="button"class="btn btn-danger btn-sm" id="btn10" (click)="changeBtn('btn10','OWASPBRICKS')">Off</button>
 
 
             </td>
@@ -225,6 +270,9 @@
 
       </div>
     </div>
+
+
+
 
   </div>
 </div>

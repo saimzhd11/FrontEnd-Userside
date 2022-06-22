@@ -19,7 +19,7 @@ export class IconsComponent implements OnInit {
   }
   variable:any;
   ngOnInit():void {
-    this.variable=this.http.get("http://127.0.0.1:8000/attackinfo").subscribe(
+    this.variable=this.http.get("http://192.168.252.128:8000/attackinfo").subscribe(
       data=>this.variable=data
     );
   }

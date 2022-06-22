@@ -103,7 +103,7 @@ export class NotificationsComponent implements OnInit {
   variable:any;
   ngOnInit() {
    
-    this.variable=this.http.get("http://127.0.0.1:8000/challengesinfo").subscribe(
+    this.variable=this.http.get("http://192.168.252.128:8000/challengesinfo").subscribe(
     data=>this.variable=data
   );
   }

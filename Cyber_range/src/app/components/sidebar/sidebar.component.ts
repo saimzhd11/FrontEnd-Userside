@@ -30,19 +30,19 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
 
-  {
-    path: '/maps',
-    title: 'LOCATION',
-    rtlTitle: 'خرائط',
-    icon: 'icon-pin',
-    class: '' },
-  {
-    path: '/notifications',
-    title: 'CHALLENGES',
-    rtlTitle: 'إخطارات',
-    icon: 'icon-bell-55',
-    class: ''
-  },
+  // {
+  //   path: '/maps',
+  //   title: 'LOCATION',
+  //   rtlTitle: 'خرائط',
+  //   icon: 'icon-pin',
+  //   class: '' },
+  // {
+  //   { path: '/notifications',
+  //   title: 'CHALLENGES',
+  //   rtlTitle: 'إخطارات',
+  //   icon: 'icon-bell-55',
+  //   class: ''
+  // },
 
   {
     path: '/user',
@@ -51,13 +51,13 @@ export const ROUTES: RouteInfo[] = [
     icon: 'icon-single-02',
     class: ''
   },
-  {
-    path: "/typography",
-    title: "Completed Challenges",
-    rtlTitle: "طباعة",
-    icon: "icon-align-center",
-    class: ""
-  },
+  // {
+  //   path: "/typography",
+  //   title: "Completed Challenges",
+  //   rtlTitle: "طباعة",
+  //   icon: "icon-align-center",
+  //   class: ""
+  // },
  /* {
     path: "/rtl",
     title: "RTL Support",
